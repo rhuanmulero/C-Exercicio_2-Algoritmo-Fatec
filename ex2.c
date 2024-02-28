@@ -11,7 +11,7 @@ printf("Bem-Vindo a Simulations de Jujubinhas do Rhuan \nGostaria de simular uma
 scanf(" %s", &resposta); // <- Base de Dados
 
 if(resposta == 's' || resposta == 'S') {
-    printf("Perfeito! Compras pelo nosso Software possuem desconto de 9%%! \nQuantas Unidades Gostaria Hoje?\n"); // <- Decisão
+    printf("Perfeito! Compras pelo nosso Software possuem desconto de 9%%! \nQuantas Unidades Gostaria Hoje?\n"); // <- DecisÃ£o
     scanf("%d", &unidades);
     printf("Entendido! Voce gostaria de: %d, certo?\nQual o preco das unidades?\n", unidades);
     scanf("%d", &preco);
@@ -19,9 +19,8 @@ if(resposta == 's' || resposta == 'S') {
     precoTotal = unidades * preco;
     desconto = precoTotal - (precoTotal * 9/100);
 
-    printf("Total sem Desconto: %d\n");
+    printf("Total sem Desconto: %.2f\n", precoTotal);
     printf("Total com Desconto: %.2f", desconto);
-
 }
 
 else {
